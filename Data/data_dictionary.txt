@@ -1,0 +1,35 @@
+***Data Dictionary Scraped European Job Ads Fall 2021***
+
+- Each row in the dataset represents a single job advertisement for a data job. Information about the jobs is contained in the columns.
+
+- Below is a brief explanation of the columns in the jobs database. There are some columns which have missing data, but the main columns (e.g. employer/job id, job function, job description text) have complete information for each job ad.
+
+employer_id  = unique id for the employer (a number of employers have multiple jobs in the database)
+company_name = name of the company posting the job
+job_id  = unique id for the job description (each id only appears once)
+job_title  = name of the job title as input by the employer
+job_function = harmonized job title managed by job listing site. this is referred to as "role" in the blog post. it takes on only 4 values - data scientist, data engineer, data analyst & machine learning engineer
+job_description_text = text of the job ad. Note - not all job ads are in English! 
+job_skills  = list of employer-determined skill keywords in English. Note - this is a bit messy to store keywords in a list in a dataframe, but was the simplest solution when creating the dataset
+education_desired = list of employer-requested educational attainment. Also stored in a list!
+job_location  = in which city is the job located?
+company_hq_location  = City + Country of company headquarters
+company_sector_name = the sector the company is active in
+company_industry = the industry the company is active in  
+company_type = the type of company (e.g. government, private company, etc.) 
+company_size = number of employees that the company has
+company_revenue = annual company revenue in USD
+company_year_founded  = year the company was founded
+company_website = company website 
+rating_global = site users' overall rating of company
+rating_comp_ben  = site users' rating of compensation & benefits (pay, bonus, etc.)
+rating_culture_values = site users' rating of culture and values
+rating_career_opportunities  = site users' rating of career opportunities
+rating_w_life_balance  = site users' rating of work-life balance
+rating_sr_mgt  = site users' rating of senior management
+query_country = the country used in the query to scrape the job ad 
+date_job_posted = the date the job advertisement was posted 
+date_job_expires = the date the job advertisement expires
+age_job_posting_days = the age of the job ad (in days) on the date that it was scraped 
+scraping_date = the date the job was scraped 
+language = the language of the job description text (determined via the langid package in python)
