@@ -2,7 +2,7 @@
 
 The content here accompanies the following blog post:
 
-# NOT YET PUBLISHED
+## https://methodmatters.github.io/data-jobs-europe/
 
 The data are in the "Data" directory and the code in the "Scripts" directory. 
 
